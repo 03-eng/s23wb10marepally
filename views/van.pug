@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+  - let Nresults = [{vancolor:"blue",vanmodel:"honda",vanprice:"2000$"},{vancolor:"Mathematics",vanmodel:"Kia",vanprice:"5000$"},{vancolor:"Physics",vanmodel:"150",vanprice:"6.23$"}]
+  div(class="container-fluid")
+    div(class="row")
+      each item,index in Nresults
+        div(class="col-sm-2",onClick=`buy(${index})`)
+          p Name of the book is #{item.vancolor}
+          p Note Book Pages are #{item.vanmodel}
+          p Cost of the book is #{item.vanprice}
+  script.
+    function buy(N) {
+      N=N+1;
+      alert('You purchased item '+N);
+    }  
+
