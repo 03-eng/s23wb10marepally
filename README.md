@@ -1,7 +1,6 @@
 # s23wb10marepally
 # link
 https://s23wb10marepally-pmqt.onrender.com/
-<<<<<<< HEAD
 class van
 vancolor(string)
 vanmodel(string)
