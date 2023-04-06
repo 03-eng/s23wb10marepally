@@ -2,8 +2,8 @@ extends layout
 
 block content
   h1= title
-  p i like eating food #{title}
-  button(type ="button" , class="btn btn-danger") PRESS ME
+  p i like playing online games #{title}
+  button(type ="button" , class="btn btn-danger" onClick="reduce()") PRESS ME
   div(id="reduce" ) REDUCE THE VALUE
      script.
       let count =20;
@@ -13,4 +13,4 @@ block content
         change=change-1;
          document.getElementById('reduce').innerHTML = 'Count is' + count +'Change is' +change;
       }
-
+     
